@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style>
+.item1 { grid-area: block; }
+.item2 { grid-area: block2; }
+.item3 { grid-area: block3; }
+.item4 { grid-area: block4; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'block block2 block3 block4';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+
+<div class="grid-container">
+  <div class="item1" style="background-image: url('https://drive.google.com/file/d/1ggxaxonBk6a2DSwFes4aYnWtYnnO_ZZg/view?usp=sharing'); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; height: 300px; ">Header</div>
+  <div class="item2" style="background-image: url('Background-texture.jpg'); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; height: 300px; ">Menu</div>
+  <div class="item3" style="background-image: url('AdobeStock_375191185.jpg'); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; height: 300px; ">Main</div>
+  <div class="item4" style="background-image: url('AdobeStock_185813343-(1).jpg'); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; height: 300px; ">Right</div>
+</div>
+  </body>
+</html>
